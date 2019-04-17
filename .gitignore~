@@ -1,0 +1,6 @@
+oldies/
+*.tmp
+*.log
+*.aux
+*.pdf
+~*
