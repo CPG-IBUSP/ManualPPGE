@@ -1,0 +1,9 @@
+oldies/
+*.tmp
+*.log
+*.aux
+*.nlo
+*.out
+*.toc
+*.pdf
+~*
