@@ -1,0 +1,223 @@
+%%% Pacotes utilizados %%%
+
+%% Codificação e formatação básica do LaTeX
+% Suporte para português (hifenação e caracteres especiais)
+\usepackage[english,brazilian]{babel}
+% Aumenta fontes
+\usepackage{scalefnt}
+
+%Muda estilos de headings
+\usepackage{sectsty}
+
+% Codificação do arquivo
+\usepackage[utf8]{inputenc}
+
+% Mapear caracteres especiais no PDF
+\usepackage{cmap}
+
+% Codificação da fonte
+\usepackage[T1]{fontenc}
+
+% Essencial para colocar funções e outros símbolos matemáticos
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+
+% Notas de rodapé com mesmo texto repetidas
+\usepackage{footmisc}
+
+%% Layout
+% Customização do layout da página, margens espelhadas
+\usepackage[twoside]{geometry}
+% Aumenta as margens internas para espiral
+\geometry{bindingoffset=10pt}
+\geometry{textheight=610pt}
+\addtolength{\voffset}{25pt}
+\addtolength{\headsep}{10pt}
+\addtolength{\footskip}{10pt}
+
+% Só pra ajustar o layout
+\setlength{\marginparwidth}{90pt}
+\usepackage{layout}
+
+
+% Para definir espaçamento entre as linhas
+\usepackage{setspace}
+
+% Espaçamento do texto para o frame
+\setlength{\fboxsep}{1em}
+
+% Faz com que as margens tenham o mesmo tamanho horizontalmente
+\geometry{hcentering}
+
+%% Elementos Gráficos
+% Para incluir figuras (pacote extendido)
+\usepackage[]{graphicx}
+
+% Suporte a cores
+\usepackage{color}
+
+% Criar figura dividida em subfiguras
+\usepackage{subfig}
+\captionsetup[subfigure]{style=default, margin=0pt, parskip=0pt, hangindent=0pt, indention=0pt, singlelinecheck=true, labelformat=parens, labelsep=space}
+
+% Caso queira guardar as figuras em uma pasta separada
+% (descomente e) defina o caminho para o diretório:
+%\graphicspath{{./figuras/}}
+
+% Customizar as legendas de figuras e tabelas
+\usepackage{caption}
+
+% Criar ambientes com 2 ou mais colunas
+\usepackage{multicol}
+
+% Ative o comando abaixo se quiser colocar figuras de fundo (e.g., capa)
+\usepackage{wallpaper}
+% Exemplo para inserir a figura na capa está no arquivo pre.tex (linha 7)
+% Ajuste da posição da figura no eixo Y
+\addtolength{\wpYoffset}{-0.25 \paperheight}
+% Ajuste da posição da figura no eixo X
+%\addtolength{\wpXoffset}{36pt}
+
+%% Tabelas
+% Elementos extras para formatação de tabelas
+\usepackage{array}
+
+% Tabelas com qualidade de publicação
+\usepackage{booktabs}
+
+% Para criar tabelas maiores que uma página
+\usepackage{longtable}
+
+% adicionar tabelas e figuras como landscape
+\usepackage{lscape}
+
+%% Lista de Abreviações
+% Cria lista de abreviações
+\usepackage[notintoc,portuguese]{nomencl}
+\makenomenclature
+
+%% Notas de rodapé
+% Lidar com notas de rodapé em diversas situações
+\usepackage{footnote}
+%\usepackage{footmisc}
+
+% Notas criadas nas tabelas ficam no fim das tabelas
+\makesavenoteenv{tabular}
+
+%% Links dinâmicos
+% Suporte para hipertexto, links para referências e figuras
+\usepackage{hyperref}
+% Configurações dos links e metatags do PDF a ser gerado
+\hypersetup{colorlinks=true, linkcolor=blue, citecolor=red, filecolor=red, pagecolor=red, urlcolor=blue}
+            % pdfauthor={Nome do Autor},
+            % pdftitle={Título do Projeto},
+            % pdfsubject={Assunto do Projeto},
+            % pdfkeywords={palavra-chave, palavra-chave, palavra-chave},
+            % pdfproducer={Latex},
+            % pdfcreator={pdflatex}}
+
+% Conta o número de páginas
+\usepackage{lastpage}
+
+%% Referências bibliográficas e afins
+% Formatar as citações no texto e a lista de referências
+\usepackage{natbib}
+
+% Adicionar bibliografia, índice e conteúdo na Tabela de conteúdo
+% Não inclui lista de tabelas e figuras no índice
+%\usepackage[nottoc,notlof,notlot]{tocbibind}
+
+%% Pontuação e unidades
+% Posicionar inteligentemente a vírgula como separador decimal
+\usepackage{icomma}
+
+% Formatar as unidades com as distâncias corretas
+\usepackage[tight]{units}
+
+% Sem numero de capitulo nas secoes
+\setcounter{secnumdepth}{0}
+% Eliminar o zero antes de cada numero de seção
+\renewcommand*\thesection{\arabic{section}}
+
+%Para eliminar palavra "capitulo" antes de cada capítulo
+%dica de http://www.latex-community.org/forum/viewtopic.php?f=4&t=8522
+    \makeatletter
+    \renewcommand{\@makechapterhead}[1]{%
+    \vspace*{50 pt}%
+    {\setlength{\parindent}{0pt} \raggedright \normalfont
+    \bfseries\Huge\thechapter.\ #1
+    \par\nobreak\vspace{40 pt}}}
+    \makeatother
+
+%% Cabeçalho e rodapé
+% Controlar os cabeçalhos e rodapés
+\usepackage{fancyhdr}
+
+% Usar os estilos do pacote fancyhdr
+\pagestyle{fancy}
+
+%Eliminar numeros do nome da seção e do capítulo que vao no cabeçalho
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+% pagina sem headers para inicio de capitulos
+\fancypagestyle{plain}{
+        \fancyhf{}      
+        \cfoot{}
+        fancyfoot[RO,LE]{\LARGE \bfseries \thepage}    
+        }
+
+
+
+% pagina sem nada
+%\fancypagestyle{empty}{\fancyhf{}}
+        
+% Limpar os campos do cabeçalho atual
+\fancyhead{}
+
+% Número da página do lado esquerdo [R] nas páginas ímpares [O] e do lado direito [L] nas páginas pares [E]
+%\fancyhead[RO,LE]{\thepage}
+
+%Eliminar a palavra capítulo do início dos capítulos
+%\renewcommand{\chaptername}{} % nao funfa
+
+% Nome da seção do lado direito em páginas ímpares
+\fancyhead[LO]{\large Manual PG-Ecologia USP - \the\year}
+% Titulo do lado esquerdo em páginas pares
+\fancyhead[RE]{\large \leftmark}
+% Páginas no rodapé
+\cfoot{}
+\fancyfoot[RO,LE]{\thepage}
+
+
+% Para ter numeros de paginas mesmo na pagina inicial do capítulo
+
+
+% linha de separação entre cabeçalho e conteúdo (coloque 0pt para omitir)
+\renewcommand{\headrulewidth}{0pt}
+% linha de separação entre rodapé e conteúdo (coloque 0pt para omitir)
+\renewcommand{\footrulewidth}{0pt}
+% Altura do cabeçalho
+\headheight 13.6pt
+
+%% Inserir comentários no texto
+% Marcar mudanças e fazer comentários
+%\usepackage[margins]{trackchanges}
+% Iniciais do autor
+%\renewcommand{\initialsTwo}{bcv}
+% Notas na margem interna
+%\reversemarginpar
+
+%% Comandos customizados
+
+% Espécie e abreviação
+\newcommand{\subde}{\emph{Clypeaster subdepressus}}
+\newcommand{\subsus}{\emph{C.~subdepressus}}
+
+% Título do projeto
+\newcommand{\titulo}{Título original do projeto}
+\newcommand{\nomedoaluno}{Nome Completo do Aluno}
+
+%% Pacotes não implementados
+% Para não sobrar espaços em branco estranhos
+%\widowpenalty=1000
+%\clubpenalty=1000
