@@ -1,0 +1,69 @@
+% Classe do documento
+\documentclass{report}
+% Pacotes e comandos customizados
+\include{meta_html}
+
+%\usepackage{indentfirst} %deslocamento na primeira linha de cada paragrafo
+%Alteração de tamanho de fonte de headings
+%\sectionfont{\huge}
+%\subsectionfont{\LARGE}
+%\subsubsectionfont{\Large}
+
+% Tamanho da fonte da footnote
+%\renewcommand*{\footnotelayout}{\large\sffamily}
+%\let\footnotesize\large
+
+% Início do texto
+
+\begin{document}
+%\Large
+% Fonte aumentada: nao aumenta tudo (não aumenta os titulos de secoes nem rodapes)
+%\scalefont{1.25}
+
+%capa e sumário
+%\include{manual_capa}
+% Capa
+\begin{titlepage}
+% Se quiser uma figura de fundo na capa ative o pacote wallpaper
+% e descomente a linha abaixo.
+%\ThisCenterWallPaper{0.25}{logotipo_IB}
+
+
+\begin{center}
+{\LARGE  \sffamily UNIVERSIDADE DE SÃO PAULO \\[1em] 
+Programa de Pós-Graduação em Ecologia}
+\par
+\vspace{0.2\paperheight}
+{\Huge \scshape \bfseries Manual para Estudantes \\[2em] 
+\the\year}
+\par
+\vfill
+%\textbf{{\large São Paulo}\\[1em]
+%{\large 2012}}
+\end{center}
+\end{titlepage}
+
+
+% Índice
+%\tableofcontents
+
+
+% Números das páginas em arábicos
+%\pagenumbering{arabic}
+
+\include{conteudo}
+
+\chapter{Expediente}
+
+  
+\include{ficha_tecnica}
+
+\vfill
+
+
+\section{Contato}
+
+\include{contato}
+
+
+\end{document}
