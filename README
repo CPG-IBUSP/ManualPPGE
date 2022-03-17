@@ -12,9 +12,12 @@
  * `meta.tex` , `meta_html.tex` : cabeçalhos para configuração das fontes acima
 ## Para gerar os manuais
 1. Execute `pdflatex manual.tex`
-2 . Execute `pdflatex manual_booklet.tex`
+2. Execute `pdflatex manual_booklet.tex`
 3. Execute `latex2html -nofootnode -contents index.html -dir docs/ manual_html.tex`
-## Para submeter propostas de alterações
+## Para sugerir alterações
+### Como um issue
+Use a seção de *issues* destes repositório para fazer sugestões.
+### Por um pull request
 1. Faça um fork deste repositório
 2. Faça as alteraçõe em seu fork
 3. Envie um *Pull request* para este repositório
