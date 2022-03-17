@@ -14,10 +14,10 @@
 1. Execute `pdflatex manual.tex`
 2 . Execute `pdflatex manual_booklet.tex`
 3. Execute `latex2html -nofootnode -contents index.html -dir docs/ manual_html.tex`
-## Para publicar os manuais no site do PPGE-USP
-
-A versão html do manual é servida doiretamente no site, náo é preciso fazer nada mais.
 ## Para submeter propostas de alterações
 1. Faça um fork deste repositório
 2. Faça as alteraçõe em seu fork
 3. Envie um *Pull request* para este repositório
+## Para publicar os manuais no site do PPGE-USP
+As versões html e livreto para impressão do manual são servidas diretamente no site, não é preciso fazer nada mais.
+Para atualizar a versão livreto eletrônico pelo serviço FLIPHTML5 cirie uma conta em https://fliphtml5.com/, faça upload do livreto, e copie o link de compartilhamento para o itemd e menu do site Orientações > Manual des Estudantes > Livreto digital. Para isso é preciso ser administrador do site do PPGE-USP 
