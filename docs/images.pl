@@ -8,8 +8,8 @@ $cached_env_img{$key} = q|<IMG STYLE=""
  ALT="\begin{spacing}{1.2}
 Paulo Inácio de Knegt López de Prado (Coordenador)\\\\
 s...
-...ri (representante discente)\\\\
-suplente: Julia Rodrigues Barreto
+...75 em]
+suplente: Bruna de França Gomes e Luís Felipe Natálio
 \end{spacing}">;WIDTH="0" HEIGHT="0"|; 
 
 1;

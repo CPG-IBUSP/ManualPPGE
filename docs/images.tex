@@ -50,7 +50,12 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=red, filecolor=red, pagecolor=red, urlcolor=blue}
             % pdfauthor={Nome do Autor},
-            
+            %
+% pdfsubject={Assunto do Projeto},
+            %
+% pdfproducer={Latex},
+            %
+
 
 \usepackage{icomma}
 
@@ -70,7 +75,6 @@
     {\setlength{\parindent}{0pt} \raggedright \normalfont
     \bfseries\Huge\thechapter.\ #1
     
-
 \nobreak\vspace{40 pt}}}
     \makeatother
 
@@ -168,20 +172,20 @@
   \else\expandafter\vss\fi}%
 \providecommand{\selectlanguage}[1]{}%
 \makeatletter \tracingstats = 1 
-\providecommand{\Mu}{\textrm{M}}
-\providecommand{\Tau}{\textrm{T}}
-\providecommand{\Beta}{\textrm{B}}
-\providecommand{\Eta}{\textrm{H}}
-\providecommand{\omicron}{\textrm{o}}
 \providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Zeta}{\textrm{Z}}
 \providecommand{\Iota}{\textrm{J}}
 \providecommand{\Chi}{\textrm{X}}
-\providecommand{\Epsilon}{\textrm{E}}
-\providecommand{\Alpha}{\textrm{A}}
-\providecommand{\Nu}{\textrm{N}}
-\providecommand{\Zeta}{\textrm{Z}}
-\providecommand{\Kappa}{\textrm{K}}
 \providecommand{\Rho}{\textrm{R}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\omicron}{\textrm{o}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Alpha}{\textrm{A}}
 
 
 \begin{document}
@@ -221,6 +225,7 @@
 \stepcounter{subsection}
 \stepcounter{subsubsection}
 \stepcounter{subsubsection}
+\stepcounter{section}
 \stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
@@ -262,7 +267,7 @@
 \stepcounter{section}
 \stepcounter{chapter}
 {\newpage\clearpage
-\lthtmlfigureA{spacing785}%
+\lthtmlfigureA{spacing821}%
 \begin{spacing}{1.2}
     Paulo Inácio de Knegt López de Prado (Coordenador)\\
     suplente: Glauco Machado \\[0.75 em]
@@ -274,8 +279,8 @@
     suplente: Paulo Roberto Guimarães Jr\\[0.75 em]
     Renata Pardini\\
     suplente:  Jean Paul Metzger  \\[0.75 em]
-    Bruna de Oliveira Cassettari (representante discente)\\
-    suplente:  Julia Rodrigues Barreto
+João Paulo dos Santos Vieira de Alencar (representante discente)\\[0.75 em]
+    suplente:  Bruna de França Gomes  e Luís Felipe Natálio 
   \end{spacing}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}

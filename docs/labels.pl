@@ -3,87 +3,91 @@
 
 
 $key = q/Restaurantes_Universit__rios/;
-$external_labels{$key} = "$URL/" . q|node53.html|; 
+$external_labels{$key} = "$URL/" . q|node111.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/auxilio-pesquisa-de-alunas-e-alunos/;
-$external_labels{$key} = "$URL/" . q|node25.html|; 
+$external_labels{$key} = "$URL/" . q|node83.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cafe-existencial/;
-$external_labels{$key} = "$URL/" . q|node31.html|; 
+$external_labels{$key} = "$URL/" . q|node89.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/cepeusp/;
-$external_labels{$key} = "$URL/" . q|node52.html|; 
+$external_labels{$key} = "$URL/" . q|node110.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/chap:aprest/;
-$external_labels{$key} = "$URL/" . q|node1.html|; 
+$external_labels{$key} = "$URL/" . q|node58.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/ecoescola/;
-$external_labels{$key} = "$URL/" . q|node32.html|; 
+$external_labels{$key} = "$URL/" . q|node90.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/representacao-discente/;
-$external_labels{$key} = "$URL/" . q|node51.html|; 
+$external_labels{$key} = "$URL/" . q|node109.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sala-da-posgraduaucao/;
-$external_labels{$key} = "$URL/" . q|node50.html|; 
+$external_labels{$key} = "$URL/" . q|node108.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:CCP/;
-$external_labels{$key} = "$URL/" . q|node3.html|; 
+$external_labels{$key} = "$URL/" . q|node60.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:boasprat/;
-$external_labels{$key} = "$URL/" . q|node33.html|; 
+$external_labels{$key} = "$URL/" . q|node91.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:bolsas/;
-$external_labels{$key} = "$URL/" . q|node20.html|; 
+$external_labels{$key} = "$URL/" . q|node78.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:comites/;
-$external_labels{$key} = "$URL/" . q|node7.html|; 
+$external_labels{$key} = "$URL/" . q|node64.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:conclusao/;
-$external_labels{$key} = "$URL/" . q|node15.html|; 
+$external_labels{$key} = "$URL/" . q|node73.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:conduta/;
-$external_labels{$key} = "$URL/" . q|node11.html|; 
+$external_labels{$key} = "$URL/" . q|node68.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:depos-da-diss/;
-$external_labels{$key} = "$URL/" . q|node17.html|; 
+$external_labels{$key} = "$URL/" . q|node75.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:disciplinas/;
-$external_labels{$key} = "$URL/" . q|node6.html|; 
+$external_labels{$key} = "$URL/" . q|node63.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:fraude/;
-$external_labels{$key} = "$URL/" . q|node14.html|; 
+$external_labels{$key} = "$URL/" . q|node71.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:oport/;
-$external_labels{$key} = "$URL/" . q|node27.html|; 
+$external_labels{$key} = "$URL/" . q|node85.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/sec:qualif/;
-$external_labels{$key} = "$URL/" . q|node10.html|; 
+$external_labels{$key} = "$URL/" . q|node67.html|; 
+$noresave{$key} = "$nosave";
+
+$key = q/sec:recesso-laboral/;
+$external_labels{$key} = "$URL/" . q|node72.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/subsec:pae/;
-$external_labels{$key} = "$URL/" . q|node29.html|; 
+$external_labels{$key} = "$URL/" . q|node87.html|; 
 $noresave{$key} = "$nosave";
 
 $key = q/subsec:seminarios/;
-$external_labels{$key} = "$URL/" . q|node30.html|; 
+$external_labels{$key} = "$URL/" . q|node88.html|; 
 $noresave{$key} = "$nosave";
 
 1;

@@ -8,3 +8,9 @@ No implementation found for style `icomma'
 No implementation found for style `units'
 
 redefining command \thesection 
+
+command \@makechapterhead had no previous definition
+
+command \sectionmark had no previous definition
+
+command \chaptermark had no previous definition
