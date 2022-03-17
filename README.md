@@ -23,4 +23,6 @@ Use a seção de *issues* destes repositório para fazer sugestões.
 3. Envie um *Pull request* para este repositório
 ## Para publicar os manuais no site do PPGE-USP
 As versões html e livreto para impressão do manual são servidas diretamente no site, não é preciso fazer nada mais.
-Para atualizar a versão livreto eletrônico pelo serviço FLIPHTML5 cirie uma conta em https://fliphtml5.com/, faça upload do livreto, e copie o link de compartilhamento para o itemd e menu do site Orientações > Manual des Estudantes > Livreto digital. Para isso é preciso ser administrador do site do PPGE-USP 
+
+Para atualizar a versão livreto eletrônico pelo serviço FLIPHTML5 cirie uma conta em https://fliphtml5.com/, faça upload do livreto, e copie o link de compartilhamento para o item de menu do site Orientações > Manual des Estudantes > Livreto digital. Para isso é preciso ser administrador do site do PPGE-USP 
+
