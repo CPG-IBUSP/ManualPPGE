@@ -5,63 +5,46 @@
 
 
 
-
 \usepackage[english,brazilian]{babel}
 \usepackage{scalefnt}
 
-
 \usepackage{sectsty}
-
 
 \usepackage[utf8]{inputenc}
 
-
 \usepackage[T1]{fontenc}
-
 
 \usepackage{amsmath,amssymb,amsfonts,textcomp}
 
-
 \usepackage{layout}
-
 
 \usepackage{setspace}
 
 
-
 \setlength{\fboxsep}{1em} 
-
 
 \usepackage{graphicx}
 
-
 \usepackage{color}
-
 
 \usepackage{wallpaper}
 
 \addtolength{\wpYoffset}{-0.25 \paperheight} 
 
-
 \usepackage[notintoc,portuguese]{nomencl}
 \makenomenclature
-
 
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=blue, citecolor=red, filecolor=red, pagecolor=red, urlcolor=blue}
             % pdfauthor={Nome do Autor},
             
-
 \usepackage{icomma}
 
-
 \usepackage[tight]{units}
-
 
 \setcounter{secnumdepth}{0}
 %
 \renewcommand{\thesection}{\arabic{section}}
-
 
 \makeatletter
     %
@@ -74,13 +57,10 @@
 \nobreak\vspace{40 pt}}}
     \makeatother
 
-
 %
 \renewcommand{\sectionmark}[1]{\markright{#1}{}}
 %
 \renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-
-
 
 
 
@@ -109,7 +89,6 @@
 \addtolength{\textheight}{\topmargin}\setlength{\topmargin}{0pt}
 \addtolength{\textheight}{\headheight}\setlength{\headheight}{0pt}
 \addtolength{\textheight}{\headsep}\setlength{\headsep}{0pt}
-\setlength{\textwidth}{349pt}
 \newwrite\lthtmlwrite
 \makeatletter
 \let\realnormalsize=\normalsize
@@ -127,6 +106,7 @@
  \def\phantompar{\csname par\endcsname}\normalsize}%
 \def\lthtmltypeout#1{{\let\protect\string \immediate\write\lthtmlwrite{#1}}}%
 \usepackage[tightpage,active]{preview}
+\PreviewBorder=0.5bp
 \newbox\lthtmlPageBox
 \newdimen\lthtmlCropMarkHeight
 \newdimen\lthtmlCropMarkDepth
@@ -139,10 +119,10 @@
     \lthtmltypeout{^^J:\lthtmllabel:lthtmlCropMarkDepth:=\the\lthtmlCropMarkDepth:1ex:=\the \dimexpr 1ex}%
     \begin{preview}\copy\lthtmlPageBox\end{preview}}%
 \long\def\lthtmlTightFBoxA#1{\def\lthtmllabel{#1}%
-    \adjustnormalsize\setbox\lthtmlPageBox=\vbox\bgroup %
+    \adjustnormalsize\setbox\lthtmlPageBox=\vbox\bgroup\hbox\bgroup %
     \let\ifinner=\iffalse \let\)\liih@math %
     \bgroup\catcode`\_=8 }%
-\long\def\lthtmlTightFBoxZ{\egroup
+\long\def\lthtmlTightFBoxZ{\egroup\egroup
     \@next\next\@currlist{}{\def\next{\voidb@x}}%
     \expandafter\box\next\egroup %
     \lthtmlCropMarkHeight=\ht\lthtmlPageBox \advance \lthtmlCropMarkHeight 6pt
@@ -168,20 +148,20 @@
   \else\expandafter\vss\fi}%
 \providecommand{\selectlanguage}[1]{}%
 \makeatletter \tracingstats = 1 
-\providecommand{\Tau}{\textrm{T}}
-\providecommand{\Iota}{\textrm{J}}
-\providecommand{\Omicron}{\textrm{O}}
-\providecommand{\Kappa}{\textrm{K}}
-\providecommand{\Beta}{\textrm{B}}
-\providecommand{\Mu}{\textrm{M}}
-\providecommand{\omicron}{\textrm{o}}
-\providecommand{\Rho}{\textrm{R}}
-\providecommand{\Chi}{\textrm{X}}
-\providecommand{\Eta}{\textrm{H}}
 \providecommand{\Alpha}{\textrm{A}}
-\providecommand{\Nu}{\textrm{N}}
-\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\Beta}{\textrm{B}}
+\providecommand{\Chi}{\textrm{X}}
 \providecommand{\Epsilon}{\textrm{E}}
+\providecommand{\Eta}{\textrm{H}}
+\providecommand{\Iota}{\textrm{J}}
+\providecommand{\Kappa}{\textrm{K}}
+\providecommand{\Mu}{\textrm{M}}
+\providecommand{\Nu}{\textrm{N}}
+\providecommand{\Omicron}{\textrm{O}}
+\providecommand{\Rho}{\textrm{R}}
+\providecommand{\Tau}{\textrm{T}}
+\providecommand{\Zeta}{\textrm{Z}}
+\providecommand{\omicron}{\textrm{o}}
 
 
 \begin{document}
@@ -210,31 +190,33 @@
 \stepcounter{chapter}
 \stepcounter{section}
 \stepcounter{section}
-\stepcounter{chapter}
-\stepcounter{section}
-\stepcounter{section}
-\stepcounter{section}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{section}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsubsection}
-\stepcounter{subsubsection}
-\stepcounter{section}
-\stepcounter{section}
-\stepcounter{subsection}
-\stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{chapter}
 \stepcounter{section}
+\stepcounter{section}
+\stepcounter{section}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
+\stepcounter{section}
 \stepcounter{subsection}
-\stepcounter{subsection}
+\stepcounter{subsubsection}
+\stepcounter{subsubsection}
+\stepcounter{section}
 \stepcounter{section}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{subsection}
 \stepcounter{chapter}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{section}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{subsection}
+\stepcounter{chapter}
+\stepcounter{section}
 \stepcounter{section}
 \stepcounter{section}
 \stepcounter{section}
@@ -263,20 +245,20 @@
 \stepcounter{section}
 \stepcounter{chapter}
 {\newpage\clearpage
-\lthtmlfigureA{spacing821}%
+\lthtmlfigureA{spacing832}%
 \begin{spacing}{1.2}
     Paulo Inácio de Knegt López de Prado (Coordenador)\\
     suplente: Glauco Machado \\[0.75 em]
     Alexandre Adalardo de Oliveira (Vice-Coordenador)\\
-    suplente: Daniela Lopes Scarpa \\[0.75 em]
-    Marcio Roberto Costa Martins\\
-    suplente: Vania Regina Pivello \\[0.75 em]
+    suplente: Isabel Alves dos Santos \\[0.75 em]
+    Ronaldo Bastos Francini Filho\\
+    suplente: Rodrigo Cogni \\[0.75 em]
     Tiago Bosisio Quental\\
     suplente: Paulo Roberto Guimarães Jr\\[0.75 em]
     Renata Pardini\\
     suplente:  Jean Paul Metzger  \\[0.75 em]
-João Paulo dos Santos Vieira de Alencar (representante discente)\\[0.75 em]
-    suplente:  Bruna de França Gomes  e Luís Felipe Natálio 
+    Clarissa de Oliveira Santos(representante discente)\\[0.75 em]
+    suplente: Luan Moldan Motta 
   \end{spacing}%
 \lthtmlfigureZ
 \lthtmlcheckvsize\clearpage}
